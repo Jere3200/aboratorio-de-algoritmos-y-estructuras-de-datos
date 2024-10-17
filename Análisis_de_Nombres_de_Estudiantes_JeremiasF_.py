@@ -33,7 +33,7 @@ while True:
     # 3. Validación de nombres.
     elif nombre.isdigit():
         print("El nombre no puede ser un número.")
-    # para toda la verificación controla que sean caracteres alfabeticos, divide en parte separadas y quita espacios en blancos.
+    # permite la carga de nombres compuesto, elimina los espacios y verifica que los caracteres sean alfabeticos.
     elif nombre.replace(" ", "").isalpha() and nombre.strip():
         nombres.append(nombre)
         print(f"Nombre '{nombre}' agregado correctamente, muy bien! .")
@@ -156,6 +156,7 @@ while True:
     elif seleccion == "11":
         print("----------------------------------------------------------------------------------------------------------------")
         print("Ha sido un gusto que utilizarás mi programa, ¡espero verte pronto!")
+        print("Saludos, Jeremias!")
         print(""
               '\n░░░░░░░░░░░░▄▄░░░░░░░░░░░░░░'
               '\n░░░░░░░░░░░█░░█░░░░░░░░░░░░░'
